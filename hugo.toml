@@ -1,0 +1,4 @@
+baseURL = 'https://xuwan123-liang.github.io/'
+languageCode = 'en-us'
+title = 'Hygge 的个人主页'
+theme = 'PaperMod'

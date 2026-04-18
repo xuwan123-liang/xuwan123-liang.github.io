@@ -19,17 +19,15 @@ theme = "hugo-theme-stack"
         toggle = true
         default = "auto"
 [[menu.main]]
-    identifier = "about" # Stack 依靠这个标识符
+    identifier = "about"
     name = "关于我"
     url = "/about/"
     weight = 10
-    params:
-        icon: user # 会自动显示一个小人图标
+    params = { icon = "user" } # 使用大括号包裹参数，并用等号赋值
 
 [[menu.main]]
     identifier = "post"
     name = "项目集"
     url = "/post/"
     weight = 20
-    params:
-        icon: archive
+    params = { icon = "archive" }

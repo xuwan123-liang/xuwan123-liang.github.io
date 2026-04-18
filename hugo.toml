@@ -11,8 +11,7 @@ theme = "hugo-theme-stack"
     featuredImageField = "image"
 
     [params.sidebar]
-        # 注意：这里路径要和 static 里的对应，开头要加斜杠
-        avatar = "/images/avatar.jpg"
+        avatar = "images/avatar.jpg"
         title = "徐皖亮"
         subtitle = "AI & Finance | Tech Blogger"
 
@@ -20,22 +19,14 @@ theme = "hugo-theme-stack"
         toggle = true
         default = "auto"
 
-    [params.footer]
-        since = 2026
-        customText = "徐皖亮的作品集"
-
-# --- 菜单栏：修正了图标名称和语法 ---
-
 [[menu.main]]
     identifier = "about"
     name = "关于我"
     url = "/about/"
     weight = 10
-    params = { icon = "user" }
 
 [[menu.main]]
     identifier = "post"
     name = "项目集"
     url = "/post/"
     weight = 20
-    params = { icon = "archives" } # 修正点：原先少了个 s

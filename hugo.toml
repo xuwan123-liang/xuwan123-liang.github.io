@@ -1,17 +1,17 @@
 baseURL = 'https://xuwan123-liang.github.io/'
 languageCode = 'zh-cn'
-title = '徐皎亮的个人主页'
+title = '徐皖亮的个人主页'
 theme = 'PaperMod'
 
 [params]
     # 这里放置主题的全局参数
     env = 'production'
-    description = "徐皎亮的个人主页"
-    author = "徐皎亮"
+    description = "徐皖亮的个人主页"
+    author = "徐皖亮"
 
 [params.profileMode]
     enabled = true # 必须开启此项，首页才会显示个人名片模式
-    title = "徐皎亮 (Wanliang Xu)"
+    title = "徐皖亮 (Wanliang Xu)"
     subtitle = "Incoming MPhil in AI @ CUHK-SZ | Finance & Strategy | Tech Blogger"
 
     # 你可以添加头像图片（图片需放在 static 文件夹下，例如 static/me.png）

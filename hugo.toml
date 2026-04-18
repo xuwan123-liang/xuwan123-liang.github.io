@@ -25,3 +25,18 @@ theme = 'PaperMod'
     [[params.profileMode.buttons]]
         name = "关于我"
         url = "about"
+[[menu.main]]
+    name = "项目集"
+    url = "posts"
+    weight = 10
+
+[[menu.main]]
+    name = "归档"
+    url = "archives"
+    weight = 20
+
+[[menu.main]]
+    name = "关于"
+    url = "about"
+    weight = 30
+

@@ -1,0 +1,58 @@
+baseURL = 'https://xuwan123-liang.github.io/'
+languageCode = 'zh-cn'
+title = '徐皖亮的个人主页'
+theme = 'PaperMod'
+
+# --- 搜索功能的核心配置：放在这里 ---
+[outputs]
+    home = ["HTML", "RSS", "JSON"]
+[params]
+    env = 'production'
+    description = "徐皖亮的个人主页"
+    author = "徐皖亮"
+
+    # --- 1. 个人名片设置 (Profile Mode) ---
+    [params.profileMode]
+        enabled = true
+        title = "徐皖亮 (Wanliang Xu)"
+        subtitle = "Incoming MPhil in AI @ CUHK-SZ | Finance & Strategy | Tech Blogger"
+        imageUrl = "images/avatar.jpg" # 注意：这里必须和文件夹名 images 一致
+        imageWidth = 120
+        imageHeight = 120
+
+        [[params.profileMode.buttons]]
+            name = "项目展示"
+            url = "posts"
+
+        [[params.profileMode.buttons]]
+            name = "关于我"
+            url = "about"
+
+    # --- 2. 社交图标设置 (需放在 params 下) ---
+    [[params.socialIcons]]
+        name = "github"
+        url = "https://github.com/xuwan123-liang"
+
+    [[params.socialIcons]]
+        name = "email"
+        url = "mailto:122020233@link.cuhk.edu.cn"
+
+# --- 3. 顶部菜单设置 (必须放在文件末尾，独立出来) ---
+[[menu.main]]
+    name = "项目集"
+    url = "posts"
+    weight = 10
+
+[[menu.main]]
+    name = "归档"
+    url = "archives"
+    weight = 20
+
+[[menu.main]]
+    name = "关于"
+    url = "about"
+    weight = 30
+[[menu.main]]
+    name = "搜索"
+    url = "search"
+    weight = 5

@@ -32,9 +32,3 @@ body {
     line-height: 1.6;
     color: #666;
 }
-
-.dark {
-    --theme: #1d1e20;
-    --entry: #2e2e33;
-    --primary: rgba(255, 255, 255, 0.8);
-}

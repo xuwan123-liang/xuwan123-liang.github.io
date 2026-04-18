@@ -1,4 +1,6 @@
 baseURL = 'https://xuwan123-liang.github.io/'
+[outputs]
+    home = ["HTML", "RSS", "JSON"] # 必须要 JSON 才能支持搜索
 languageCode = 'zh-cn'
 title = '徐皖亮的个人主页'
 theme = 'PaperMod'
@@ -9,11 +11,25 @@ theme = 'PaperMod'
     description = "徐皖亮的个人主页"
     author = "徐皖亮"
 
+[[params.socialIcons]]
+    name = "github"
+    url = "https://github.com/xuwan123-liang"
+
+[[menu.main]]
+    name = "校园邮箱"
+    url = "122020233@link.cuhk.edu.cn"
+
+[[params.socialIcons]]
+    name = "email"
+    url = "mailto:2286184936@qq.com"
+
 [params.profileMode]
     enabled = true # 必须开启此项，首页才会显示个人名片模式
     title = "徐皖亮 (Wanliang Xu)"
     subtitle = "Incoming MPhil in AI @ CUHK-SZ | Finance & Strategy | Tech Blogger"
-
+    imageUrl = "image/职业照.jpg" # 指向你刚建的文件夹
+    imageWidth = 120               # 头像宽度
+    imageHeight = 120
     # 你可以添加头像图片（图片需放在 static 文件夹下，例如 static/me.png）
     # imageUrl = "me.png"
     # imageTitle = "Wanliang"
@@ -39,4 +55,7 @@ theme = 'PaperMod'
     name = "关于"
     url = "about"
     weight = 30
-
+[[menu.main]]
+    name = "搜索"
+    url = "search"
+    weight = 5

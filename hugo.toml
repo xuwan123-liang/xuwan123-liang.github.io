@@ -3,6 +3,9 @@ languageCode = 'zh-cn'
 title = '徐皖亮的个人主页'
 theme = 'PaperMod'
 
+# --- 搜索功能的核心配置：放在这里 ---
+[outputs]
+    home = ["HTML", "RSS", "JSON"]
 [params]
     env = 'production'
     description = "徐皖亮的个人主页"
@@ -49,3 +52,7 @@ theme = 'PaperMod'
     name = "关于"
     url = "about"
     weight = 30
+[[menu.main]]
+    name = "搜索"
+    url = "search"
+    weight = 5

@@ -1,19 +1,40 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Hygge 的个人主页</title>
+    <title></title>
     <link>http://localhost:1313/</link>
-    <description>Recent content on Hygge 的个人主页</description>
+    <description>Recent content on </description>
     <generator>Hugo</generator>
-    <language>en-us</language>
-    <lastBuildDate>Fri, 17 Apr 2026 18:44:40 +0800</lastBuildDate>
+    <language>en</language>
+    <lastBuildDate>Sat, 18 Apr 2026 13:00:05 +0800</lastBuildDate>
     <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>About</title>
+      <link>http://localhost:1313/about/</link>
+      <pubDate>Sat, 18 Apr 2026 13:00:05 +0800</pubDate>
+      <guid>http://localhost:1313/about/</guid>
+      <description>&lt;h3 id=&#34;你好我是徐皖亮&#34;&gt;你好，我是徐皖亮&lt;/h3&gt;&#xA;&lt;p&gt;这里可以写你的详细介绍：&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;strong&gt;背景&lt;/strong&gt;：金融专业大四，即将入读港中深人工智能 MPhil。&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;兴趣&lt;/strong&gt;：金融 + AI 的复合领域、社会学思考、技术写作。&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;经历&lt;/strong&gt;：曾实习于 AIRS、深圳瑞捷、长城证券等。&lt;/li&gt;&#xA;&lt;/ul&gt;</description>
+    </item>
     <item>
       <title>My First Post</title>
       <link>http://localhost:1313/posts/my-first-post/</link>
       <pubDate>Fri, 17 Apr 2026 18:44:40 +0800</pubDate>
       <guid>http://localhost:1313/posts/my-first-post/</guid>
       <description></description>
+    </item>
+    <item>
+      <title>归档</title>
+      <link>http://localhost:1313/archives/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/archives/</guid>
+      <description>archives</description>
+    </item>
+    <item>
+      <title>搜索</title>
+      <link>http://localhost:1313/search/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/search/</guid>
+      <description>search</description>
     </item>
   </channel>
 </rss>

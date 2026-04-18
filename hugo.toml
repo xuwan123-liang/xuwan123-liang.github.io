@@ -6,41 +6,37 @@ title = '徐皖亮的个人主页'
 theme = 'PaperMod'
 
 [params]
-    # 这里放置主题的全局参数
     env = 'production'
     description = "徐皖亮的个人主页"
     author = "徐皖亮"
 
-[[params.socialIcons]]
-    name = "github"
-    url = "https://github.com/xuwan123-liang"
+    # --- 1. 个人名片设置 (Profile Mode) ---
+    [params.profileMode]
+        enabled = true
+        title = "徐皖亮 (Wanliang Xu)"
+        subtitle = "Incoming MPhil in AI @ CUHK-SZ | Finance & Strategy | Tech Blogger"
+        imageUrl = "images/avatar.jpg" # 注意：这里必须和文件夹名 images 一致
+        imageWidth = 120
+        imageHeight = 120
 
-[[menu.main]]
-    name = "校园邮箱"
-    url = "mailto:122020233@link.cuhk.edu.cn"
+        [[params.profileMode.buttons]]
+            name = "项目展示"
+            url = "posts"
 
-[[params.socialIcons]]
-    name = "email"
-    url = "mailto:2286184936@qq.com"
+        [[params.profileMode.buttons]]
+            name = "关于我"
+            url = "about"
 
-[params.profileMode]
-    enabled = true # 必须开启此项，首页才会显示个人名片模式
-    title = "徐皖亮 (Wanliang Xu)"
-    subtitle = "Incoming MPhil in AI @ CUHK-SZ | Finance & Strategy | Tech Blogger"
-    imageUrl = "image/avatar.jpg" # 指向你刚建的文件夹
-    imageWidth = 120               # 头像宽度
-    imageHeight = 120
-    # 你可以添加头像图片（图片需放在 static 文件夹下，例如 static/me.png）
-    # imageUrl = "me.png"
-    # imageTitle = "Wanliang"
+    # --- 2. 社交图标设置 (需放在 params 下) ---
+    [[params.socialIcons]]
+        name = "github"
+        url = "https://github.com/xuwan123-liang"
 
-    [[params.profileMode.buttons]]
-        name = "项目展示"
-        url = "posts"
+    [[params.socialIcons]]
+        name = "email"
+        url = "mailto:122020233@link.cuhk.edu.cn"
 
-    [[params.profileMode.buttons]]
-        name = "关于我"
-        url = "about"
+# --- 3. 顶部菜单设置 (必须放在文件末尾，独立出来) ---
 [[menu.main]]
     name = "项目集"
     url = "posts"

@@ -3,7 +3,6 @@ languageCode = "zh-cn"
 title = "徐皖亮 | AI & Finance"
 theme = "hugo-theme-stack"
 
-# 1. 必须开启 JSON 输出，侧边栏搜索才能工作
 [outputs]
     home = ["HTML", "RSS", "JSON"]
 
@@ -11,35 +10,32 @@ theme = "hugo-theme-stack"
     mainSections = ["post"]
     featuredImageField = "image"
 
-    # 2. 侧边栏配置（注意：Stack 主题里叫 avatar，不叫 imageUrl）
     [params.sidebar]
+        # 注意：这里路径要和 static 里的对应，开头要加斜杠
         avatar = "/images/avatar.jpg"
         title = "徐皖亮"
         subtitle = "AI & Finance | Tech Blogger"
 
-    # 3. 颜色模式
     [params.colorScheme]
         toggle = true
         default = "auto"
 
-    # 4. 页脚设置
     [params.footer]
         since = 2026
         customText = "徐皖亮的作品集"
 
-# --- 5. 菜单配置（使用标准的 TOML 语法，解决冒号报错） ---
+# --- 菜单栏：修正了图标名称和语法 ---
 
 [[menu.main]]
     identifier = "about"
     name = "关于我"
     url = "/about/"
     weight = 10
-    # 为了防止云端图标报错，如果还是 build 失败，请先保持下面这行注释状态
-    # params = { icon = "user" }
+    params = { icon = "user" }
 
 [[menu.main]]
     identifier = "post"
     name = "项目集"
     url = "/post/"
     weight = 20
-    # params = { icon = "archive" }
+    params = { icon = "archives" } # 修正点：原先少了个 s

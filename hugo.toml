@@ -11,10 +11,25 @@ theme = "hugo-theme-stack"
     featuredImageField = "image"
 
     [params.sidebar]
-        avatar = "images/avatar.jpg" # 确保 static/images/ 文件夹里有 avatar.jpg
+        avatar = "/images/avatar.jpg" # 确保 static/images/ 文件夹里有 avatar.jpg
         title = "徐皖亮"
         subtitle = "AI & Finance | Tech Blogger"
 
     [params.colorScheme]
         toggle = true
         default = "auto"
+[[menu.main]]
+    identifier = "about" # Stack 依靠这个标识符
+    name = "关于我"
+    url = "/about/"
+    weight = 10
+    params:
+        icon: user # 会自动显示一个小人图标
+
+[[menu.main]]
+    identifier = "post"
+    name = "项目集"
+    url = "/post/"
+    weight = 20
+    params:
+        icon: archive

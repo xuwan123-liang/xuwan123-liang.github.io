@@ -1,0 +1,19 @@
+/* 1. 全屏背景图 - 记得在 static/images/ 放一张 background.jpg */
+body {
+    background: url("/images/background.jpg") no-repeat center center fixed;
+    background-size: cover;
+}
+
+/* 2. 侧边栏和主容器的毛玻璃效果（Stack 核心美化） */
+.sidebar, .main-container {
+    background: rgba(255, 255, 255, 0.7) !important; /* 半透明白 */
+    backdrop-filter: blur(12px); /* 磨砂感 */
+    border-radius: 16px;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+}
+
+/* 3. 让文字在背景下更好看 */
+.article-title, .sidebar .site-name {
+    color: #1d1d1f !important;
+    text-shadow: 0 2px 4px rgba(255, 255, 255, 0.5);
+}
